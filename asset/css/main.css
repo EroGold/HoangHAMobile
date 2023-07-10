@@ -862,12 +862,17 @@ section .flash-sales .header {
     margin-bottom: 2rem;
 }
 
-.flash-sale-nav {
+.flash-sale-nav,
+.flash-sale-nav-2 {
     flex-grow: 10;
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
+}
+
+.flash-sale-nav-2{
+    display: none;
 }
 
 ul{
@@ -888,7 +893,8 @@ section li {
     padding: 1.5rem .5rem 0;
 }
 
-.flash-sale-nav li a {
+.flash-sale-nav li a,
+.flash-sale-nav-2 li a {
     color:#009981;
     display: block;
     border: .1rem solid #009981;
@@ -1415,6 +1421,10 @@ footer .bg a.hotline, footer .bg a.hotline:link, footer .bg a.hotline:visited {
 
 @media screen and (max-width: 576px) {
 
+    .product-banner .arrow{
+        display: none;
+    }
+
     header {
         background: #f4f4f4;
         position: fixed;
@@ -1548,6 +1558,7 @@ footer .bg a.hotline, footer .bg a.hotline:link, footer .bg a.hotline:visited {
 
     .note{
         font-size: 3.5rem;
+        margin: 3rem;
     }
 
     .box-home::after {
@@ -1628,8 +1639,34 @@ footer .bg a.hotline, footer .bg a.hotline:link, footer .bg a.hotline:visited {
         overflow: hidden;
     }
 
-    .flash-sales{
+    section .flash-sales .header{
+        display: block;
+    }
+
+    .flash-sales .header div{
+        display: flex;
+        margin: 0 0 0 4rem;
+    }
+
+    section .flash-sales .header h3{
+        font-size: 6rem;
+    }
+
+    .timer strong, .timer span{
+        font-size: 6rem;
+    }
+
+    .timer strong{
+        width: 6rem;
+    }
+
+    .flash-sale-nav{
         display: none;
+    }
+
+    .flash-sale-nav-2{
+        display: flex;
+        font-size: 4rem;
     }
 
     .footer-stick-right{
