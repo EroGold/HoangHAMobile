@@ -67,15 +67,3 @@ $(document).ready(function() {
         $('#nextBanner').click();
         }, 5000);
     });
-
-window.addEventListener('load', function(){
-    new Glider(document.querySelector('.sale-product'), {
-        slidesToScroll: 1,
-        slidesToShow: 5.5,
-        draggable: true,
-        arrows: {
-            prev: '.prevProduct',
-            next: '.nextProduct'
-        }
-  });
-})

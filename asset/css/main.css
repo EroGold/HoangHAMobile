@@ -1762,5 +1762,13 @@ footer .bg a.hotline, footer .bg a.hotline:link, footer .bg a.hotline:visited {
     .social{
         display: block;
     }
+
+    section .flash-sales .header .timer{
+        padding-left: 0;
+    }
+
+    .product-item .arrow{
+        visibility: hidden;
+    }
 }
 
