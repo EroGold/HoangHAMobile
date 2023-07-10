@@ -1,0 +1,451 @@
+a:-webkit-any-link {
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+}
+
+.container {
+    min-width: 1200px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.sale-product .row{
+    display: inline-flex !important;
+    flex-wrap: nowrap !important;
+}
+
+.bag{
+    border-radius: .8rem;
+    background-color: orange;
+    color: #fff;
+    padding: .4rem;
+    font-size: 1rem;
+}
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,'Segoe UI';
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    min-width: 1200px;
+}
+
+:root{
+    --primary-color: #00483d;
+    --background-color:#ececec;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 4rem;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+.text-orange{
+    color:#ffa500;
+}
+
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+a{
+    color: #000;
+}
+
+.login-modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 1000;
+    padding: 2rem;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.75);
+    text-align: center;
+}
+
+
+@keyframes zoomUp{
+    from{
+        opacity: 0;
+    } to{
+        opacity: 1;
+    }
+}
+
+
+.modal-close{
+    background-color: #ff0000;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    float: right;
+    cursor: pointer;
+}
+
+.modal-close i{
+    margin: .5rem;
+}
+
+.modal {
+    vertical-align: middle;
+    z-index: 2;
+    max-width: 100rem;
+    box-sizing: border-box;
+    width: 90%;
+    background-color: #fff;
+    padding: 1.5rem 3rem;
+    -webkit-border-radius: .8rem;
+    -moz-border-radius: .8rem;
+    -o-border-radius: .8rem;
+    -ms-border-radius: .8rem;
+    border-radius: .8rem;
+    -webkit-box-shadow: 0 0 1rem #000;
+    -moz-box-shadow: 0 0 1rem #000;
+    -o-box-shadow: 0 0 1rem #000;
+    -ms-box-shadow: 0 0 1rem #000;
+    box-shadow: 0 0 1rem #000;
+    text-align: left;
+}
+
+.login-form {
+    margin: 3rem 0;
+    display: flex;
+    background: #fff;
+    border-radius: 1.1rem;
+}
+
+.login-form .form{
+    flex-grow: 1;
+    padding: 2rem 12rem;
+
+}
+
+.login-form .form .form-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.login-form .login-bg {
+    background: #fbe9e7;
+    padding: 4rem;
+    border-radius: 1rem 0 0 1.1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.external .social{
+    display: flex;
+}
+
+.external .facebook,
+.external .google{
+    width: 49%;
+    margin: 0 1rem 0 0;
+}
+
+.login-form .form .external button {
+    justify-content: flex-start;
+    display: flex;
+    line-height: 3.8rem;
+    padding: .3rem;
+}
+
+.login-form .form .external button {
+    margin-right: 2rem;
+    border: 0;
+    color: #fff;
+    font-weight: bold;
+    border-radius: .4rem;
+    flex-grow: 1;
+}
+
+.login-form .form .external .btn-facebook {
+    background: #4267b2;
+}
+
+.login-form .form .external .btn-google {
+    background: #4385f5;
+}
+
+header nav ul{
+    position: relative;
+}
+
+.login-form .form .external button {
+    justify-content: flex-start;
+    display: flex;
+    line-height: 3.8rem;
+    padding: .3rem;
+}
+
+.external img  {
+    padding: .2rem 0 .2rem .2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.external span{
+    padding-left: .5rem;
+    font-weight: 700;
+}
+
+.external .btn-facebook,.btn-google{
+    width: 100%;
+}
+
+.login-form .split {
+    border-bottom: .2rem solid #afafaf;
+    position: relative;
+    height: 2.3rem;
+    margin: 1rem 0 2rem 0;
+    justify-content: center;
+    display: flex;
+}
+
+.login-form .split p {
+    position: absolute;
+    background: #fff;
+    padding: 0 1rem;
+    color: #afafaf;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.login-form .form .row {
+    margin-bottom: 1.5rem;
+}
+
+.login-form .form .row .label {
+    margin-bottom: .5rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.login-form .form .row input {
+    background: #e5e5e5;
+    border-radius: .4rem;
+    padding: 1rem;
+    border: none;
+    width: 100%;
+}
+
+.checkbox-ctn {
+    display: block;
+    position: relative;
+    margin-bottom: 1.2rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.checkmark {
+    position: absolute;
+    margin-left: 1rem;
+    top: 0;
+    left: 0;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #eee;
+    border-radius: .5rem;
+}
+
+.checkbox-ctn input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkbox-ctn span{
+    margin-left: 1rem;
+}
+
+.checkbox-ctn input:checked~.checkmark {
+    background-color: #009981;
+}
+
+.login-form .form .button-group {
+    display: flex;
+    justify-content: space-around;
+}
+
+.login-form .form .button-group button:first-child, .login-form .form .button-group .btn:first-child {
+    margin-left: 0;
+    outline: none;
+}
+
+.login-form .form .button-group .btn-submit {
+    background: transparent linear-gradient(180deg,#00917a 0%,#00483d 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0 .4rem .6rem #00000029;
+    border-radius: .3rem;
+    color: #fff;
+    border: none;
+    padding: 1.2rem;
+}
+
+.login-form .form .button-group .btn-submit:hover {
+    background: transparent linear-gradient(180deg,#00483d 0%,#00917a 100%) 0% 0% no-repeat padding-box;
+    color: #fff;
+}
+
+.login-form .form .button-group .btn-link:hover {
+    color: #00483d;
+}
+
+.login-form .form .button-group .btn {
+    margin: 0 .3rem;
+    font-weight: bold;
+    border-radius: .4rem;
+    flex-grow: 1;
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    border: .2rem solid #00483d;
+}
+
+.login-form .form .forgotpass {
+    text-align: right;
+    font-weight: bold;
+}
+
+.login-form .form .forgotpass a {
+    color: #222;
+}
+
+.login-form .form .forgotpass a:hover {
+    color: #00483d;
+}
+
+@media screen and (max-width: 576px){
+    
+    .modal-close{
+        width: 6rem;
+        height: 6rem;
+        font-size: 4.2rem;
+    }
+
+    .modal{
+        height: 100%;
+        width: 90%;
+    }
+    
+    .login-modal{
+        width: 100%;
+    }
+
+    .login-form{
+        display: block;
+    }
+
+    .login-form .login-bg{
+        background: none;
+        padding: 9rem 9rem 0 9rem;
+    }
+
+    .login-form .form .form-item{
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+
+    .login-form .form h1{
+        font-size: 7rem;
+        margin: 0;
+    }
+
+    .login-form .form .row .label{
+        font-size: 3.3rem    ;
+    }
+
+    .login-form .form .row input{
+        font-size: 4rem  ;
+    }
+
+    .internal{
+        font-size: 4rem;
+    }
+
+    .external .social{
+        display: block;
+    }
+
+    .external .facebook,
+    .external .google{
+        width: 100%;
+        margin: 1rem 0 0 0 ;
+    }
+
+    .login-form .form .external .btn-facebook,
+    .login-form .form .external .btn-google{
+        font-size: 3rem;
+        line-height: 7rem;
+    }
+
+    .external img{
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+
+    .login-form .split{height: 3.3rem;}
+
+    .login-form .split p {
+        font-size: 3.4rem;
+    }
+
+    .checkbox-ctn span:first-child {
+        margin: 6rem;
+        font: 3rem  ;
+    }
+
+    .checkbox-ctn span:last-child{
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+
+
