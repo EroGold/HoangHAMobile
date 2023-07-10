@@ -31,36 +31,51 @@ $(".js-close").click(function(){
 
 $(document).ready(function() {
     $('#prevBanner').on('click', function(){
-        $('#im_' + currentImage).stop().fadeOut(1);
-        decreaseImage();
-        $('#im_' + currentImage).stop().fadeIn(1);
+        $('#im_' + currentItem).stop().fadeOut(1);
+        $('#item_' + currentItem).removeClass('option-click')
+        decreaseItem();
+        $('#im_' + currentItem).stop().fadeIn(1);
+        $('#item_' + currentItem).addClass('option-click')
         });
+        
     $('#nextBanner').on('click', function(){
-    $('#im_' + currentImage).stop().fadeOut(1);
-    increaseImage();
-    $('#im_' + currentImage).stop().fadeIn(1);
+    $('#im_' + currentItem).stop().fadeOut(1);
+    $('#item_' + currentItem).removeClass('option-click')
+    increaseItem();
+    $('#im_' + currentItem).stop().fadeIn(1);
+    $('#item_' + currentItem).addClass('option-click')
     });
     
-    var currentImage = 1;
-    var totalImages = 3;
-    
-    function increaseImage() {
-    ++currentImage;
-    if(currentImage > totalImages) {
-    currentImage = 1;
+    var currentItem = 1;
+    var totalItem = 4;
+
+    function increaseItem(){
+        ++currentItem;
+        if(currentItem > totalItem){
+            currentItem = 1;
+        }
     }
-    }
-    function decreaseImage() {
-    --currentImage;
-    if(currentImage < 1) {
-    currentImage = totalImages;
-    }
+
+    function decreaseItem(){
+        --currentItem;
+        if(currentItem < totalItem){
+            currentItem = totalItem;
+        }
     }
 
     window.setInterval(function() {
-        $('#prevBanner').click();
+        $('#nextBanner').click();
         }, 5000);
     });
 
-// product  
-    
+window.addEventListener('load', function(){
+    new Glider(document.querySelector('.sale-product'), {
+        slidesToScroll: 1,
+        slidesToShow: 5.5,
+        draggable: true,
+        arrows: {
+            prev: '.prevProduct',
+            next: '.nextProduct'
+        }
+  });
+})

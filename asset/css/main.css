@@ -917,7 +917,8 @@ section li {
 }
 
 section .flash-sales .header .timer {
-    padding-top: 1.8rem;
+    padding-top: 1.3rem;
+    padding-left: 10rem;
 }
 
 .timer strong{
