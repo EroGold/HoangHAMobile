@@ -27,6 +27,25 @@ $(".js-close").click(function(){
         });
    });
 
+// fixed nav
+
+window.onscroll = function(){
+    myFunction()
+}
+
+var nav = document.getElementById('myNav')
+var sticky = nav.offsetTop
+
+function myFunction(){
+    if (window.pageYOffset > sticky) {
+        nav.classList.add("sticky");
+      } else {
+        nav.classList.remove("sticky");
+        }
+    }
+
+
+
 // Slider
 
 $(document).ready(function() {
@@ -68,6 +87,8 @@ $(document).ready(function() {
         }, 5000);
     });
 
+// Glider product
+
     window.addEventListener('load', function(){
         new Glider(document.querySelector('.glider'), {
             slidesToScroll: 1,
@@ -77,4 +98,4 @@ $(document).ready(function() {
               next: '.glider-next'
             }
           });
-      })
+        });

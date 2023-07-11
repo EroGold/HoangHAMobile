@@ -303,6 +303,10 @@ header .top-navigation a{
     cursor: pointer;
 }
 
+.slider .arrow i{
+    margin: 12rem 0 0 0 ;
+}
+
 .product-item .arrow{
     font-size: 2rem;
     color: #000;
@@ -321,7 +325,7 @@ header .top-navigation a{
 }
 
 .product-list{
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
 .sale-product::-webkit-scrollbar{
@@ -375,7 +379,7 @@ header .heading .container {
 
 header .heading .logo {
     width: 25.6rem;
-    padding-right: 1rem;
+    padding-left: 1rem;
     padding-top: 1rem;
 }
 
@@ -391,14 +395,17 @@ header .heading .search-box{
     border-radius: 1.5rem;
     padding: .5rem 1rem;
     box-shadow: 0 .4rem .6rem #ccc;
-    margin-left: 1rem;
+    margin-left: 3rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    height: 4rem;
 }
 
 header .heading .search-box input {
     border: none;
     outline: none;
-    padding: 1.5rem 0;
-    width: 100%;
+    padding: .8rem 0;
+    width: 98%;
     font-weight: bold;
 }
 
@@ -410,7 +417,7 @@ header .heading .search-box button {
     box-shadow: 0 .4rem .6rem #ccc;
     position: absolute;
     right: .4rem;
-    top: .6rem;
+    top: -.6rem;
     background: #00483d;
     background-image: linear-gradient(#00917a,#00483d);
     border: none;
@@ -426,21 +433,23 @@ header .heading .order-tools {
     display: flex;
     width: 22rem;
     vertical-align: top;
-    padding-left: 2.5rem;
+    padding-left: .5rem;
+    margin-top: .5rem;
 }
 
 header .heading .order-tools .check-order a {
     display: block;
     background: #00483e;
     border-radius: 1rem;
-    padding: .6rem .8rem;
-    box-shadow: 0 .4rem .6rem #ccc;
+    padding: 0.4rem 0.8rem;
+    box-shadow: 0 0.4rem 0.6rem #ccc;
     color: #fff;
     border: none;
-    font-size: 1.2rem;
-    width: 14rem;
+    font-size: 1.1rem;
+    width: 12.6rem;
     position: relative;
     text-decoration: none;
+    height: 4.4rem;
 }
 
 header .heading .order-tools .check-order {
@@ -464,9 +473,13 @@ header .heading .order-tools .check-order .text {
 }
 
 header .heading .order-tools .cart a label i {
-    color: #ff6801;
-    font-size: .8rem;
-    margin-top: 1.9rem;
+    height: 0px;
+    width: 0px;
+    float: left;
+    margin-top: 3rem;
+    border-right: 8px solid #ff6801;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
 }
 
 header .heading .order-tools .cart a label span {
@@ -480,7 +493,7 @@ header .heading .order-tools .cart a label span {
     border-radius: .4rem;
     width: 1.2rem;
     height: 1.2rem;
-    padding: .6rem;
+    padding: .3rem;
     color: #fff;
     line-height: 1.2rem;
 }
@@ -493,13 +506,6 @@ header .heading .order-tools .cart a, header .heading .order-tools .cart a:link,
     display: flex;
     padding-top: .4rem;
 }
-
-header .heading .order-tools .cart a label i {
-    color: #ff6801;
-    font-size: .8rem;
-    margin-top: 1.9rem;
-}
-
 nav{    
     top: 0rem;
     margin-left: 0rem;
@@ -549,13 +555,14 @@ section .slider {
 
 
 .banner a img{
-    width: 98%;
+    width: 100%;
+    height: 375px;
     border-radius: 1rem;
 }
 
 .slider-option{
     background: none;
-    width: 100%;
+    width: 102%;
     margin-top: 5rem;
 }
 
@@ -596,7 +603,8 @@ header nav ul.root {
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 98%;
+    width: 100%;
+    height: 6.5rem;
 }
 
 header nav ul.root li {
@@ -611,6 +619,8 @@ header nav ul.root li a, header nav ul.root li a:link, header nav ul.root li a:v
     display: block;
     align-items: center;
     justify-content: center;
+    font-size: 2rem;
+    padding: 12px 0 10px 0;
 }
 
 header nav ul.root li a .icon {
@@ -633,7 +643,7 @@ header nav .sub-container {
     position: absolute;
     width: 100%;
     left: 0;
-    top: 5.5rem;
+    top: 6.5rem;
     z-index: 199;
     padding-top: .2rem;
     display: none;
@@ -684,6 +694,8 @@ header nav .sub {
 header nav .sub-container .sub ul li a, header nav .sub-container .sub ul li a:link,
 header nav .sub-container .sub ul li a:visited {
     color: #333;
+    padding: 0;
+    font-size: 1.2rem;
 }
 
 header nav .sub .menu:first-child {
@@ -695,6 +707,8 @@ header nav ul.root .sub h4, header nav ul.root .sub h4 a, header nav ul.root .su
     font-weight: bold;
     color: #333;
     white-space: nowrap;
+    padding: 0;
+    font-size: 1.4rem;
 }
 
 header nav .sub .menu {
@@ -796,10 +810,10 @@ section .top-slider {
 section .quick-sales {
     display: flex;
     background: none;
-    margin: 2rem 0 5rem 0;
+    margin: 2rem 0 3rem 0;
 }
 
-section .quick-sales .item {
+section .quick-sales .item:not(:last-child) {
     margin-right: 1rem;
     width: calc(1/4*100% - (1 - 1/4)*1rem);
 }
@@ -965,7 +979,7 @@ section .flash-sales .header .timer {
     color: #ffffff;
     background-color: #00483d;
     width: 40%;
-    height: 3.3rem;
+    height: 3rem;
     margin: 2rem 0;
     overflow: hidden;
     text-align: center;
@@ -1180,6 +1194,7 @@ section .box-home .header {
 
 .new .img img{
        width: 10rem;
+       height: 6rem;
        margin: 1rem;
 }
 
