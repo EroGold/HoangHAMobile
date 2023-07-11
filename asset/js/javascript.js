@@ -23,7 +23,7 @@ $(".js-close").click(function(){
    $(document).ready(function(){
         $('.sidebar-item .menu p').click(function(){
             $(this).next('.sub-container').slideToggle()
-            $(this).find('.fa-play').toggleClass('active')
+            $(this).find('.fa-play').toggleClass('arrow-active')
         });
    });
 
@@ -67,3 +67,14 @@ $(document).ready(function() {
         $('#nextBanner').click();
         }, 5000);
     });
+
+    window.addEventListener('load', function(){
+        new Glider(document.querySelector('.glider'), {
+            slidesToScroll: 1,
+            slidesToShow: 5.5,
+            arrows: {
+              prev: '.glider-prev',
+              next: '.glider-next'
+            }
+          });
+      })

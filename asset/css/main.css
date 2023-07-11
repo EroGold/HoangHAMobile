@@ -150,7 +150,7 @@ header .top-navigation a{
     margin-right: 1rem;
 }
 
-.active{
+.arrow-active{
     transform: rotate(90deg);
 }
 
@@ -540,6 +540,7 @@ section .slider {
 .product-banner .arrow-left{
     left: 6rem;
     z-index: 2;
+    height: 100%;
 }
 
 .product-banner .arrow-right{
