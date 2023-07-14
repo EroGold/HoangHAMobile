@@ -28,23 +28,32 @@ $(".js-close").click(function(){
    });
 
 // fixed nav
+$(document).ready(function(){
+    $(window).bind('scroll', function() {
+    var navHeight = $( window ).height() - 450;
+          if ($(window).scrollTop() > navHeight) {
+            $("nav").css({
+                "z-index": "1000",
+                "position": "fixed",
+                "top": "0px",
+                "color": "blue",
+                "margin-left": "0px",
+                "width": "1354px",
+                "left": "0px",
+            })
+            $('nav').addClass('fixed');
+          }
+          else {
+            $("nav").css({
+               " z-index": "auto",
+                "position": "static",
+                "top": "auto",
 
-window.onscroll = function(){
-    myFunction()
-}
-
-var nav = document.getElementById('myNav')
-var sticky = nav.offsetTop
-
-function myFunction(){
-    if (window.pageYOffset > sticky) {
-        nav.classList.add("sticky");
-      } else {
-        nav.classList.remove("sticky");
-        }
-    }
-
-
+            })
+            $('nav').removeClass('fixed');  
+          }
+     });
+ });
 
 // Slider
 

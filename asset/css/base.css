@@ -14,11 +14,6 @@ html, body {
     font-size: 62.5%;
 }
 
-.container {
-    min-width: 1200px;
-    width: 1200px;
-    margin: 0 auto;
-}
 
 .sale-product .row{
     display: inline-flex !important;
@@ -105,11 +100,7 @@ a{
     width: 100%; 
 }
 
-.sticky{
-    position: fixed;
-    top: 0;
-    width: 100%
-}
+
 
 
 @keyframes zoomUp{

@@ -4,7 +4,6 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-.container,
 .container-fluid,
 .container-xxl,
 .container-xl,
@@ -18,29 +17,27 @@
   margin-left: auto;
 }
 
+
+
+
 @media (max-width: 576px) {
   .container-sm, .container {
-    max-width: 540px;
+    min-width: 540px;
   }
 }
 @media (max-width: 768px) {
   .container-md, .container-sm, .container {
-    max-width: 720px;
+    min-width: 720px;
   }
 }
 @media (max-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
-    max-width: 960px;
+    min-width: 960px;
   }
 }
-@media (min-width: 1200px) {
-  .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1140px;
-  }
-}
-@media (min-width: 1400px) {
+@media (max-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1320px;
+    min-width: 1320px;
   }
 }
 .row {
@@ -5007,3 +5004,9 @@
 }
 
 /*# sourceMappingURL=bootstrap-grid.css.map */
+
+.container {
+  min-width: 1200px;
+  width: 1200px;
+  margin: 0 auto;
+}

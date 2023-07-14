@@ -334,8 +334,9 @@ header .top-navigation a{
 }
 
 header nav{
-    position: static;
-    width: 100%;
+    z-index: auto;
+    position: static; 
+    top: auto;
 }
 
 header .top-navigation ul {
@@ -562,7 +563,7 @@ section .slider {
 
 .slider-option{
     background: none;
-    width: 102%;
+    width: 103%;
     margin-top: 5rem;
 }
 
@@ -575,7 +576,7 @@ section .slider {
     padding: 0 ;
     height: 6.4rem;
     padding-top: 1rem;
-    margin: 0 .3rem;
+    margin: 0 .3rem 0 0;
     cursor: pointer;
 }
 
@@ -586,10 +587,6 @@ section .slider {
 .option-click{
     background-color: var(--primary-color) ;
     color: #fff;
-}
-
-nav{
-    position: fixed; 
 }
 
 header nav ul.root {
@@ -814,7 +811,7 @@ section .quick-sales {
 }
 
 section .quick-sales .item:not(:last-child) {
-    margin-right: 1rem;
+    margin-right: 1.2rem;
     width: calc(1/4*100% - (1 - 1/4)*1rem);
 }
 
@@ -1415,6 +1412,13 @@ footer .bg a.hotline, footer .bg a.hotline:link, footer .bg a.hotline:visited {
     font-size: 10rem;
 }
 
+.social ul li a.rainbow span i {
+    background: transparent linear-gradient(50deg,#fbe18a 0%,#fcbb45 21%,#f75274 38%,#d53692 52%,#8f39ce 74%,#ad63a0 100%) 0% 0% no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: block;
+}
+
 .open{
     display: block;
 }
@@ -1424,6 +1428,139 @@ footer .bg a.hotline, footer .bg a.hotline:link, footer .bg a.hotline:visited {
     visibility: visible !important;
     margin-top: 0 !important;
 }
+
+#navSocial{
+    margin-left: -1rem;
+}
+
+.footer-stick-left {
+    background: #f5f5f5 0% 0% no-repeat;
+    box-shadow: 0 4px 6px #00000029;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 2px;
+    position: fixed;
+    top: 45%;
+}
+
+.footer-stick-left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-stick-left ul li:not(:last-child) {
+    padding-bottom: 6px;
+}
+
+.footer-stick-left ul{list-style-type: none;}
+
+
+.footer-stick-left ul li a.blue {
+    border: 2px solid #3c5a99;
+    color: #3c5a99;
+}
+.footer-stick-left ul li a {
+    display: block;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    font-size: 24px;
+    padding: 5px 0 5px 0;
+    border-radius: 30px;
+}
+.footer-stick-left ul li a.blue {
+    border: 2px solid #3c5a99;
+    color: #3c5a99;
+}
+
+.footer-stick-left ul li a.red {
+    border: 2px solid #f00;
+    color: #f00;
+}
+
+.footer-stick-left ul li a.rainbow {
+    display: block;
+    padding: 2px;
+    background: linear-gradient(50deg,#fbe18a 0%,#fcbb45 21%,#f75274 38%,#d53692 52%,#8f39ce 74%,#ad63a0 100%) 0% 0% no-repeat;
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    font-size: 26px;
+}
+
+.footer-stick-left ul li a.black {
+    border: 2px solid #000;
+    color: #000;
+}
+
+.footer-stick-left ul li a.rainbow span {
+    background: #fff;
+    border-radius: 30px;
+    display: block;
+    padding: 4px 0 2px 0;
+    display: block;
+}
+
+.footer-stick-left ul li a.rainbow span i {
+    background: transparent linear-gradient(50deg,#fbe18a 0%,#fcbb45 21%,#f75274 38%,#d53692 52%,#8f39ce 74%,#ad63a0 100%) 0% 0% no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: block;
+    padding: 0.2rem 0;
+}       
+
+.footer-stick-left ul li a {
+    display: block;
+    padding: 2px 5px;
+    background: #f5f5f5;
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+nav.fixed {
+	background: #00483d;
+    box-shadow: 0 4px 6px #ccc;
+}
+
+header nav.fixed ul.root{
+    box-shadow: none;
+    height: 3.5rem;
+}
+
+nav.fixed ul.root li {
+    margin: 8px 7px 4px 4px;
+}
+
+nav.fixed ul.root li a, nav.fixed ul.root li a:link, nav.fixed ul.root li a:visited {
+    display: flex;
+    white-space: nowrap;
+}
+
+nav.fixed ul.root li a .icon {
+    font-size: 15px;
+    margin-right: 4px;
+}
+
+nav.fixed ul.root li a span {
+    font-size: 12px;
+    line-height: 25px;
+}
+
+nav.fixed .sub-container {
+    top: 34px;
+}
+
+
+
 
 @keyframes left-in{
     from{
