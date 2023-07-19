@@ -870,7 +870,7 @@
 
     </div>
 
-    <div class="ticker" style="position: relative; height: 39px; overflow: hidden;">
+    <div class="ticker">
                 <ul style="margin: 0px; position: absolute; top: 0px;">
                         <li style="margin: 0px;" class="et-item-visible">
                             <div class="top-link">
@@ -906,20 +906,52 @@
     <div class="heading">
         <div class="container">
 
-            <div class="menu-btn js-menu">
-                <a>
-                    <i class="fa-solid fa-bars"></i>
-                </a>
-            </div>
-
-            <div class="heading-warp">
-                <div class="logo">
-                    <a href="" title="C&#212;NG TY CỔ PHẦN X&#194;Y DỰNG V&#192; ĐẦU TƯ THƯƠNG MẠI HO&#192;NG H&#192;">
-                        <img src="./asset/img/logo-text.png" alt="C&#212;NG TY CỔ PHẦN X&#194;Y DỰNG V&#192; ĐẦU TƯ THƯƠNG MẠI HO&#192;NG H&#192;">
-                    </a>
-                </div>
+            <p>
+                <p>
+                    <div class="menu-btn js-menu">
+                        <a>
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                    </div>
+        
+                    <div class="heading-warp">
+                        <div class="logo">
+                            <a href="" title="C&#212;NG TY CỔ PHẦN X&#194;Y DỰNG V&#192; ĐẦU TƯ THƯƠNG MẠI HO&#192;NG H&#192;">
+                                <img src="./asset/img/logo-text.png" alt="C&#212;NG TY CỔ PHẦN X&#194;Y DỰNG V&#192; ĐẦU TƯ THƯƠNG MẠI HO&#192;NG H&#192;">
+                            </a>
+                        </div>
+            
+                        <div class="search-box item-1">
+                            <form method="get" action="/tim-kiem" onsubmit="return submitSearch(this);" enctype="application/x-www-form-urlencoded">
+                                <div class="border">
+                                    <input type="text" id="kwd" name="kwd" placeholder="Hôm nay bạn cần tìm gì?" />
+                                    <button type="submit" class="search">
+                                        <i class="fa-solid fa-magnifying-glass"></i>                        </button>
+                                </div>
+                            </form>
+                        </div>
+        
+                    </div>
+        
+                    <div class="order-tools">
+                        <div class="item check-order">
+                            <a id="btnCheckOrder" href="">
+                                <span class="icon"><i class="fa-solid fa-truck-fast"></i></span>
+                                <span class="text">Kiểm tra đơn hàng</span>
+                            </a>
+                        </div>
+                        <div class="item cart">
+                            <a href=""><i class="fa-solid fa-cart-shopping"></i>
+                                <label>
+                                    <i class="icon-left"></i><span id="cart-total">0</span>
+                                </label>
+                            </a>
+                        </div>
+                    </div>
+                </p>
     
-                <div class="search-box">
+    
+                <div class="search-box item-2">
                     <form method="get" action="/tim-kiem" onsubmit="return submitSearch(this);" enctype="application/x-www-form-urlencoded">
                         <div class="border">
                             <input type="text" id="kwd" name="kwd" placeholder="Hôm nay bạn cần tìm gì?" />
@@ -929,24 +961,7 @@
                     </form>
                 </div>
 
-            </div>
-
-
-            <div class="order-tools">
-                <div class="item check-order">
-                    <a id="btnCheckOrder" href="">
-                        <span class="icon"><i class="fa-solid fa-truck-fast"></i></span>
-                        <span class="text">Kiểm tra đơn hàng</span>
-                    </a>
-                </div>
-                <div class="item cart">
-                    <a href=""><i class="fa-solid fa-cart-shopping"></i>
-                        <label>
-                            <i class="icon-left"></i><span id="cart-total">0</span>
-                        </label>
-                    </a>
-                </div>
-            </div>
+            </p>
         </div>
     </div>
 
@@ -4268,7 +4283,7 @@
     <div class="search-bg"></div>
 
     <!-- footer-stick-right -->
-    <div class="footer-stick-right" style="position: fixed; bottom: 175px; right: 33px; z-index: 5;">
+    <div class="footer-stick-right">
         <div style="padding-bottom:10px;">
             <a href="/kho-san-pham-cu">
                 <img src="./asset/img/maycugiatot.png" />
@@ -4324,6 +4339,13 @@
     <!-- footer-zalo -->
     <div class="footer-zalo" style="position: fixed; bottom: 110px; right: 33px; z-index: 5;">
             <a href="https://oa.zalo.me/262829019064124420" target="_blank"><img src="./asset/img/zalo.svg" /></a>
+    </div>
+
+    <!-- to header -->
+    <div class="to-header footer-stick-right" id="top-up"  >
+        <a>
+            <i class="fa-solid fa-play"></i>
+        </a>
     </div>
     <!-- login modal -->
     <div class="login-modal">

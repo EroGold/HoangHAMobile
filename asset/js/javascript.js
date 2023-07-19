@@ -38,7 +38,6 @@ $(document).ready(function(){
                 "top": "0px",
                 "color": "blue",
                 "margin-left": "0px",
-                "width": "1354px",
                 "left": "0px",
             })
             $('nav').addClass('fixed');
@@ -48,12 +47,26 @@ $(document).ready(function(){
                " z-index": "auto",
                 "position": "static",
                 "top": "auto",
-
             })
             $('nav').removeClass('fixed');  
           }
      });
  });
+
+//  back to top
+
+    var offset = 150;
+    var duration = 750;
+    $(function(){
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > offset)
+            $('#top-up').fadeIn(duration);else
+            $('#top-up').fadeOut(duration);
+        });
+        $('#top-up').click(function () {
+        $('body,html').animate({scrollTop: 0}, duration);
+    });
+});
 
 // Slider
 
@@ -102,6 +115,7 @@ $(document).ready(function() {
         new Glider(document.querySelector('.glider'), {
             slidesToScroll: 1,
             slidesToShow: 5,
+            draggable: true,
             arrows: {
               prev: '.glider-prev',
               next: '.glider-next'
