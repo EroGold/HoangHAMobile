@@ -40,6 +40,9 @@ $(document).ready(function(){
                 "margin-left": "0px",
                 "left": "0px",
             })
+            $('nav .sub ul li').css({
+                "margin": "0"
+            })
             $('nav').addClass('fixed');
           }
           else {

@@ -22,6 +22,10 @@
     padding: .3rem 2rem;
 }
 
+.ticker p a{
+    color: #fff;
+}
+
 .top-link {
     text-align: center;
     display: flex;
@@ -1124,10 +1128,10 @@ section .box-home .header h4 a{
 
 .accessory{
     text-align: center;
+    box-shadow: 0 4px 6px #00000029;
     border-radius: .5rem;
     background-color: #fff;
-    padding: 4rem;
-
+    padding: 1rem 0;
 }
 
 .accessory a{
@@ -1151,10 +1155,6 @@ section .box-home .header h4 a{
     max-width: 100%;
 }
 
-.accessory .col{
-    margin-top: 1rem;
-}
-
 .accessory a span:hover{
     background: #fff;
     border:.1rem solid var(--primary-color);
@@ -1163,6 +1163,11 @@ section .box-home .header h4 a{
 .accessory a label{
     color: #000;
     
+}
+
+.accessory-list{
+    padding: 3rem 0 0 0;
+    margin: 0 3rem;
 }
 
 section .box-home .header {
@@ -1225,7 +1230,6 @@ section .box-home .header {
 .guest-list{
     background-color: #fff;
     border-radius: 1rem;
-    padding: 1rem;
     text-align: center;
     display: flex;
     overflow-x: scroll;
@@ -1242,7 +1246,7 @@ section .box-home .header {
 }
 
 .guest .item{
-    margin: 0 0 1rem 0;
+    margin: 0 0 1rem 2rem;
     width: 100%;
     background: #fff;
 
@@ -1253,8 +1257,27 @@ section .box-home .header {
     width: 22rem;
 }
 
+.guest .item h3,
+.guest .item h4{
+    text-align: left;
+    margin: 1rem;
+}
+
+.guest .item h3{
+    font-size: 2.2rem;
+}
+
+.guest .item h4{
+    color: #009981;
+    font: italic;
+    font-size: 1.4rem;
+}
+
+
 .warp{
     display: flex;
+    padding: 10px 60px;
+    margin: 20px 0;
 }
 
 section .warp .item{
@@ -1275,12 +1298,16 @@ section .warp .item .text span{
 }
 
 .note{
-    margin: .5rem;
-    text-align: left;
+    font-size: 14px;
+    color: #191919;
+    text-align: justify;
 }
 
 .subscript{
+    padding: 10px 50px;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .subscript .text{
@@ -1302,7 +1329,7 @@ section .warp .item .text span{
 section .subscript .form .input {
     background: #e6e6e6 0% 0% no-repeat padding-box;
     padding: 1.5rem 1rem;
-    width: 40rem;
+    width: 30rem;
     border-radius: 1.7rem;
 }
 
@@ -1628,6 +1655,14 @@ nav.fixed .sub-container {
 
 @media screen and (max-width: 576px) {
 
+    .item-1{
+        display: none;
+    }
+
+    .item-2{
+        display: block;
+    }
+
     .ticker{
         position: relative; 
         height: 129px; 
@@ -1654,7 +1689,11 @@ nav.fixed .sub-container {
         margin: 2rem 1rem;
     }
     header .heading .search-box{
-        height: 10rem;
+        height: 8rem;
+    }
+
+    header .heading .order-tools .cart a label i{
+        display: none;
     }
 
     .product-banner .arrow{
@@ -1727,14 +1766,6 @@ nav.fixed .sub-container {
     
     header .heading .order-tools .check-order {
         display: none;
-    }
-/* 
-    .slider{
-        display: none;
-    } */
-
-    section .slider{
-        margin-top: 25rem;
     }
 
     section .slider .slider-option{
@@ -1818,9 +1849,8 @@ nav.fixed .sub-container {
         font-size: 3.6rem ;
     }
 
-    footer .bg a,
-    footer .bg h4{
-        font-size: 6rem;
+    footer .bg ul li a{
+        font-size: 5rem;
     }
 
     footer .bg a.hotline, footer .bg a.hotline:link, footer .bg a.hotline:visited{
@@ -1918,8 +1948,6 @@ nav.fixed .sub-container {
         width: 16rem;
     }
 
-    .guest .info{width: 30%;}
-
     .info h3{
         font-size: 4rem  ;
     }
@@ -2013,6 +2041,23 @@ nav.fixed .sub-container {
 
     .accessory .col{
         margin-right: 1rem;
+    }
+
+    .guest{
+        width: 150rem;
+        height: 100rem;
+    }
+
+    .guest-list div{
+        width: 100%;
+    }
+
+    footer .bg h4 a{
+        font-size: 5.5rem;
+    }
+
+    #navSocial{
+        display: none;
     }
 }
 

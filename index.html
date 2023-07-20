@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./asset/css/base.css">
     <link rel="stylesheet" href="./asset/css/main.css">
     <link rel="stylesheet" href="./asset/font/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./asset/font/hoangha.woff">
     <link rel="stylesheet" href="./asset/css/bootstrap-5.0.2-dist/css/bootstrap-grid.css">
     <script src="./asset/js/glider.js"></script>
     <script src="./asset/js/Jquery/jquery-3.7.0.min.js"></script>
@@ -906,8 +907,7 @@
     <div class="heading">
         <div class="container">
 
-            <p>
-                <p>
+                
                     <div class="menu-btn js-menu">
                         <a>
                             <i class="fa-solid fa-bars"></i>
@@ -921,7 +921,7 @@
                             </a>
                         </div>
             
-                        <div class="search-box item-1">
+                        <div class="search-box">
                             <form method="get" action="/tim-kiem" onsubmit="return submitSearch(this);" enctype="application/x-www-form-urlencoded">
                                 <div class="border">
                                     <input type="text" id="kwd" name="kwd" placeholder="Hôm nay bạn cần tìm gì?" />
@@ -948,20 +948,6 @@
                             </a>
                         </div>
                     </div>
-                </p>
-    
-    
-                <div class="search-box item-2">
-                    <form method="get" action="/tim-kiem" onsubmit="return submitSearch(this);" enctype="application/x-www-form-urlencoded">
-                        <div class="border">
-                            <input type="text" id="kwd" name="kwd" placeholder="Hôm nay bạn cần tìm gì?" />
-                            <button type="submit" class="search">
-                                <i class="fa-solid fa-magnifying-glass"></i>                        </button>
-                        </div>
-                    </form>
-                </div>
-
-            </p>
         </div>
     </div>
 
@@ -1073,21 +1059,29 @@
     
                                         <div class="menu g1">
                                             <h4><a href="/laptop">H&#227;ng sản xuất</a></h4>
-                                            <ul class="display-column format_3">
-                                                    <li><a href="/laptop/macbook">Apple</a></li>
-                                                    <li><a href="/laptop/asus">ASUS</a></li>
-                                                    <li><a href="/laptop/dell">Dell</a></li>
-                                                    <li><a href="/laptop/hang-san-xuat/acer">Acer</a></li>
-                                                    <li><a href="/laptop/msi">MSI</a></li>
-                                                    <li><a href="/laptop/hang-san-xuat/lg">LG</a></li>
-                                                    <li><a href="/laptop/huawei">Huawei</a></li>
-                                                    <li><a href="/laptop/microsoft">Surface</a></li>
-                                                    <li><a href="/laptop/lenovo">Lenovo</a></li>
-                                                    <li><a href="/laptop/hp">HP</a></li>
-                                                    <li><a href="/laptop/gigabyte">GIGABYTE</a></li>
-                                                    <li><a href="/laptop/itel">Itel</a></li>
-                                                    <li><a href="/laptop/hang-san-xuat/xiaomi">Xiaomi</a></li>
-                                                    <li><a href="/laptop/masstel">Masstel</a></li>
+                                            <ul class="row">
+                                                    <li class="col"><a href="/laptop/macbook">Apple</a></li>
+                                                    <li class="col"><a href="/laptop/asus">ASUS</a></li>
+                                                    <li class="col"><a href="/laptop/dell">Dell</a></li>
+                                                    <li class="col"><a href="/laptop/hang-san-xuat/acer">Acer</a></li>
+                                                    <li class="col"><a href="/laptop/msi">MSI</a></li>
+                                            </ul>
+
+                                            <ul class="row">
+                                                <li class="col"><a href="/laptop/hang-san-xuat/lg">LG</a></li>
+                                                <li class="col"><a href="/laptop/huawei">Huawei</a></li>
+                                                <li class="col"><a href="/laptop/microsoft">Surface</a></li>
+                                                <li class="col"><a href="/laptop/lenovo">Lenovo</a></li>
+                                                <li class="col"><a href="/laptop/hp">HP</a></li>
+
+                                            </ul>
+
+                                            <ul class="row">
+                                                    <li class="col"><a href="/laptop/gigabyte">GIGABYTE</a></li>
+                                                    <li class="col"><a href="/laptop/itel">Itel</a></li>
+                                                    <li class="col"><a href="/laptop/hang-san-xuat/xiaomi">Xiaomi</a></li>
+                                                    <li class="col"><a href="/laptop/masstel">Masstel</a></li>
+                                                    <li class="col"></li>
                                             </ul>
                                             <h4><a>Ph&#226;n loại Sản phẩm</a></h4>
                                             <ul class="display-column format_1">
@@ -3814,62 +3808,62 @@
                 <div class="accessory-list col">
                     <div class="row row-cols-xxl-5 row-cols-sm-2 ">
                                         <div class="col">
-                                            <a href="/the-nho-usb">
-                                                <span><img src="https://cdn.hoanghamobile.com/i/cat/Uploads/2021/11/18/icon-moi-2.png" /></span>
+                                            <a href="">
+                                                <span><img src="./asset/img/icon/Usb.webp" /></span>
                                                 <label>Thẻ nhớ - USB</label>
                                             </a>
                                         </div>
                                         <div class="col">
-                                            <a href="/tai-nghe">
-                                                <span><img src="https://cdn.hoanghamobile.com/i/cat/Uploads/2021/11/18/icon-moi-15.png" /></span>
+                                            <a href="">
+                                                <span><img src="./asset/img/icon/icon-moi-15.webp" /></span>
                                                 <label>Tai nghe</label>
                                             </a>
                                         </div>
                                         <div class="col">
-                                            <a href="/sac-du-phong">
-                                                <span><img src="https://cdn.hoanghamobile.com/i/cat/Uploads/2021/11/18/icon-moi-10.png" /></span>
+                                            <a href="">
+                                                <span><img src="./asset/img/icon/icon-moi-10.png" /></span>
                                                 <label>Sạc dự ph&#242;ng</label>
                                             </a>
                                         </div>
                                         <div class="col">
-                                            <a href="/do-choi-cong-nghe/quat-de-ban">
-                                                <span><img src="https://cdn.hoanghamobile.com/i/cat/Uploads/2021/11/18/icon-moi-1.png" /></span>
+                                            <a href="">
+                                                <span><img src="./asset/img/icon/icon-moi-1.png" /></span>
                                                 <label>Quạt Mini</label>
                                             </a>
                                         </div>
                                         <div class="col">
-                                            <a href="/loa">
-                                                <span><img src="https://cdn.hoanghamobile.com/i/cat/Uploads/2021/11/18/icon-moi-14.png" /></span>
+                                            <a href="">
+                                                <span><img src="./asset/img/icon/icon-moi-14.png" /></span>
                                                 <label>Loa</label>
                                             </a>
                                         </div>
                                         <div class="col">
-                                            <a href="/phu-kien/day-deo-dong-ho">
-                                                <span><img src="https://cdn.hoanghamobile.com/i/cat/Uploads/2021/11/18/icon-xanh-2.png" /></span>
+                                            <a href="">
+                                                <span><img src="./asset/img/icon/icon-xanh-2.png" /></span>
                                                 <label>D&#226;y đeo đồng hồ, Airtag</label>
                                             </a>
                                         </div>
                                         <div class="col">
-                                            <a href="/cu-sac-day-cap">
-                                                <span><img src="https://cdn.hoanghamobile.com/i/cat/Uploads/2021/11/18/icon-moi-9.png" /></span>
+                                            <a href="">
+                                                <span><img src="./asset/img/icon/icon-moi-9.png" /></span>
                                                 <label>Củ sạc - D&#226;y c&#225;p</label>
                                             </a>
                                         </div>
                                         <div class="col">
-                                            <a href="/camera-an-ninh">
-                                                <span><img src="https://cdn.hoanghamobile.com/i/cat/Uploads/2021/11/18/icon-moi-12.png" /></span>
+                                            <a href="">
+                                                <span><img src="./asset/img/icon/icon-moi-12.png" /></span>
                                                 <label>Camera an ninh</label>
                                             </a>
                                         </div>
                                         <div class="col">
-                                            <a href="/phu-kien/bo-phat-wifi">
-                                                <span><img src="https://cdn.hoanghamobile.com/i/cat/Uploads/2021/11/18/icon-moi-11.png" /></span>
+                                            <a href="">
+                                                <span><img src="./asset/img/icon/icon-moi-11.png" /></span>
                                                 <label>Thiết bị mạng</label>
                                             </a>
                                         </div>
                                         <div class="col">
-                                            <a href="/phu-kien/phu-kien-apple">
-                                                <span><img src="https://cdn.hoanghamobile.com/i/cat/Uploads/2021/11/18/icon-moi-3.png" /></span>
+                                            <a href="">
+                                                <span><img src="./asset/img/icon/icon-moi-3.png" /></span>
                                                 <label>Apple</label>
                                             </a>
                                         </div>
@@ -3878,62 +3872,62 @@
                 <div class="accessory-list col"> 
                      <div class="row row-cols-xxl-5 row-cols-sm-2">
                          <div class="col">
-                             <a href="/op-lung-dien-thoai">
-                                 <span><img src="https://cdn.hoanghamobile.com/i/cat/Uploads/2021/11/18/icon-moi-6.png" /></span>
+                             <a href="">
+                                 <span><img src="./asset/img/icon/icon-moi-6.png" /></span>
                                  <label>Bao da - ốp lưng</label>
                              </a>
                          </div>
                          <div class="col">
-                             <a href="https://hoanghamobile.com/phu-kien/mieng-dan-man-hinh">
-                                 <span><img src="https://cdn.hoanghamobile.com/i/cat/Uploads/2021/11/18/icon-xanh-5.png" /></span>
+                             <a href="">
+                                 <span><img src="./asset/img/icon/icon-xanh-5.png" /></span>
                                  <label>D&#225;n m&#224;n h&#236;nh</label>
                              </a>
                          </div>
                          <div class="col">
-                             <a>
-                                 <span><img src="https://cdn.hoanghamobile.com/i/cat/Uploads/2021/11/18/icon-xanh-3.png" /></span>
+                             <a href="">
+                                 <span><img src="./asset/img/icon/icon-xanh-3.png" /></span>
                                  <label>Phụ kiện Laptop</label>
                              </a>
                          </div>
                          <div class="col">
-                             <a href="https://hoanghamobile.com/do-choi-cong-nghe/gopro">
-                                 <span><img src="https://cdn.hoanghamobile.com/i/cat/Uploads/2021/11/18/icon-xanh-4.png" /></span>
+                             <a href="">
+                                 <span><img src="./asset/img/icon/icon-xanh-4.png" /></span>
                                  <label>Camera h&#224;nh tr&#236;nh</label>
                              </a>
                          </div>
                          <div class="col">
-                             <a href="https://hoanghamobile.com/smart-home/can-thong-minh">
-                                 <span><img src="https://cdn.hoanghamobile.com/i/cat/Uploads/2021/11/18/icon-xanh-6.png" /></span>
+                             <a href="">
+                                 <span><img src="./asset/img/icon/icon-xanh-6.png" /></span>
                                  <label>C&#226;n th&#244;ng minh</label>
                              </a>
                          </div>
                          <div class="col">
-                             <a href="https://hoanghamobile.com/do-choi-cong-nghe/tay-cam-chong-rung">
-                                 <span><img src="https://cdn.hoanghamobile.com/i/cat/Uploads/2021/11/18/icon-xanh-1.png" /></span>
+                             <a href="">
+                                 <span><img src="./asset/img/icon/icon-xanh-1.png" /></span>
                                  <label>Tay cầm chống rung</label>
                              </a>
                          </div>
                          <div class="col">
-                             <a href="https://hoanghamobile.com/phu-kien/chuot">
-                                 <span><img src="https://cdn.hoanghamobile.com/i/cat/Uploads/2021/11/18/icon-moi-7.png" /></span>
+                             <a href="">
+                                 <span><img src="./asset/img/icon/icon-moi-7.png" /></span>
                                  <label>Chuột</label>
                              </a>
                          </div>
                          <div class="col">
-                             <a href="https://hoanghamobile.com/phu-kien/ban-phim">
-                                 <span><img src="https://cdn.hoanghamobile.com/i/cat/Uploads/2021/11/18/icon-moi-8.png" /></span>
+                             <a href="">
+                                 <span><img src="./asset/img/icon/icon-moi-8.png" /></span>
                                  <label>B&#224;n Ph&#237;m </label>
                              </a>
                          </div>
                          <div class="col">
-                             <a href="/do-gia-dung/may-loc-khong-khi">
-                                 <span><img src="https://cdn.hoanghamobile.com/i/cat/Uploads/2021/11/18/roboot.png" /></span>
+                             <a href="">
+                                 <span><img src="./asset/img/icon/roboot.png" /></span>
                                  <label>M&#225;y lọc kh&#244;ng kh&#237;</label>
                              </a>
                          </div>
                          <div class="col">
-                             <a href="/do-gia-dung/robot-hut-bui">
-                                 <span><img src="https://cdn.hoanghamobile.com/i/cat/Uploads/2021/11/18/icon-web-may-loc.png" /></span>
+                             <a href="">
+                                 <span><img src="./asset/img/icon/icon-web-may-loc.png" /></span>
                                  <label>Robot h&#250;t bụi</label>
                              </a>
                          </div>
