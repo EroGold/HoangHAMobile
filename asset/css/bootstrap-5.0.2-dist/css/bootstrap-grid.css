@@ -110,7 +110,7 @@
 
   .row-cols-sm-1 > * {
     flex: 0 0 auto;
-    width: 99%;
+    width: 62%;
   }
 
   .row-cols-sm-2 > * {
