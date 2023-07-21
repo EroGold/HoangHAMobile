@@ -2106,5 +2106,9 @@ nav.fixed .sub-container {
         z-index: 1;    
         margin-right: 10rem;
     }
+    
+    .accessory-list:last-child{
+        margin-left: 0;
+    }
 }
 
