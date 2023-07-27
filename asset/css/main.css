@@ -1071,9 +1071,20 @@ section .box-home .header h4 a{
 }
 
 .sticker-left{
+    left: 5px;
     text-align: left;
 }
 
+.sticker {
+    position: absolute;
+    top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sticker span {
+    display: block;
+}
 
 .container .product{
     position: relative;
@@ -1097,7 +1108,7 @@ section .box-home .header h4 a{
     z-index: 3;
 }
 
-.product .item .img img{
+.product-list .product .item .img img{
     width: 100%;
     margin: 4rem 0 ;
 }
