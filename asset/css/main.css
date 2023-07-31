@@ -1669,6 +1669,10 @@ nav.fixed .sub-container {
 
 @media screen and (max-width: 576px) {
 
+    #myNav{
+        display: none;
+    }
+
     .item-1{
         display: none;
     }

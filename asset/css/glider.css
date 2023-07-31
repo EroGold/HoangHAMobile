@@ -128,11 +128,6 @@
   }
 }
 
-@media screen and (max-width: 576px) {
-  .glider-slide{
-    min-width: 36rem;
-  }
-}
 
 #imagePreview .glider-slide{
   min-width: 0;
@@ -142,3 +137,19 @@
 #imagePreview .glider-next{
   font-size: 2rem;
 }
+
+@media screen and (max-width: 576px) {
+  .glider-slide{
+    min-width: 36rem;
+  }
+
+  
+  .glider-slide img {
+    max-width: none;
+  }
+
+  #imagePreview .glider-prev, #imagePreview .glider-next {
+    font-size: 6rem;
+  }
+}
+
