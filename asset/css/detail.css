@@ -188,6 +188,10 @@
     position: relative;
 }
 
+.product-price .item:hover{
+    border: 1px solid orange;
+}
+
 .product-price .item a{
     display: grid;
 }
@@ -694,6 +698,11 @@
     background: transparent linear-gradient(180deg,#00917a 0%,#00483d 100%) 0% 0% no-repeat padding-box;
     box-shadow: 0 4px 6px #00000029;
     color: #fff;
+}
+
+.info-compare a:hover{
+    background: transparent linear-gradient(0deg,#00917a 0%,#00483d 100%) 0% 0% no-repeat padding-box;
+
 }
 
 .info-compare a i {
