@@ -33,7 +33,7 @@ $('.view-more-container a').click(function(){
 window.addEventListener('load', function(){
     new Glider(document.querySelector('.glider'), {
         slidesToScroll: 1,
-        slidesToShow: 4.5,
+        slidesToShow: 4,
         draggable: true,
         arrows: {
           prev: '.glider-prev',
