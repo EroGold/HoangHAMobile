@@ -200,6 +200,12 @@
     color: #fd475a;
 }
 
+.product-price .item a i{
+    border: #000 solid 1px;
+    border-radius: 50%;
+    color: #fff;
+}
+
 /* Renew */
 .renew{
     border: 1px solid #ddd;
@@ -954,6 +960,84 @@
 
 .review-content .item .info p span{
     color: #009981;
+}
+
+/* confic */
+.confic {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 1000;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.75);
+    text-align: center;
+}
+
+.table-gray {
+    background: #efefef;
+    font-weight: bold;
+}
+.confic-screen, .confic-screen th, .confic-screen td {
+    border: 1px solid #dedede;
+    padding: 5px 8px;
+    font-size: 13px;
+    color: #333;
+}
+
+.confic-screen th {
+    color: #fff;
+    background: #009a82;
+    text-align: center;
+}
+
+.confic-screen td{
+    text-align: left;
+    text-decoration: dotted;
+}
+
+.confic-screen td ol{
+    padding: 0;
+    margin: 0 0 0 17px;
+    list-style: disc;
+}
+
+.confic-screen td:not(.table-gray){
+    background-color: #fff;
+}
+
+.confic-screen{
+    padding: 0  ;
+    background-color: #fff;
+}
+
+.confic-screen td ol li{
+    padding-bottom: 5px;
+        font-size: 14px;
+}
+
+.specs-modal a.close-specs-modal i{
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    line-height: 1.28;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 0;
+    background: #fd5465;
+    -webkit-border-radius: 26px;
+    -moz-border-radius: 26px;
+    -o-border-radius: 26px;
+    -ms-border-radius: 26px;
+    font-size: 0;
 }
 
 @media screen and (max-width: 576px){

@@ -41,3 +41,29 @@ window.addEventListener('load', function(){
         }
       });
     });
+
+
+    $('.item a').click(function(){
+        $(this).parent().css({
+            "border": "green solid 3px"
+        })
+
+        $(this).children().css({
+            "color": "green",
+            "border": "none"
+        })
+
+        $(this).siblings().css({
+            "border": "1px solid #ccc",
+        })
+    })
+
+// specs modal
+    $('.specs-modal-show').click(function(){
+        $('.specs-modal').show();
+    })
+    
+    $(".modal-close").click(function(){
+        $(".login-modal").hide();
+    })
+    
