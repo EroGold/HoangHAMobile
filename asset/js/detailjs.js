@@ -43,19 +43,8 @@ window.addEventListener('load', function(){
     });
 
 
-    $('.item a').click(function(){
-        $(this).parent().css({
-            "border": "green solid 3px"
-        })
-
-        $(this).children().css({
-            "color": "green",
-            "border": "none"
-        })
-
-        $(this).siblings().css({
-            "border": "1px solid #ccc",
-        })
+    $('.item').click(function(){
+        $(this).toggleClass('active')
     })
 
 // specs modal
@@ -63,7 +52,34 @@ window.addEventListener('load', function(){
         $('.specs-modal').show();
     })
     
-    $(".modal-close").click(function(){
-        $(".login-modal").hide();
+    $(".close-specs-modal").click(function(){
+        $(".specs-modal").hide();
     })
     
+$('.imagePreview').click(function(){
+    $(this).css({
+        "position": "fixed",
+        "background-color": "rgba(0 ,0 ,0 , 0.75",
+        "width": "100%",
+        "height": "100%",
+        "z-index": "99999",
+        "text-align": "center",
+        "top": "0",
+        "left": "0"
+    })
+
+    $('.product-image .product-img-slider img').css({
+        "width": "60rem"
+    })
+
+    $('.list-imgPreview').css({
+        "display": "none"
+    })
+})
+
+$('imagePreview img').focusout(function(){
+    $(this).css({
+        "width": "38rem",
+        "height": "37rem"
+    })
+})

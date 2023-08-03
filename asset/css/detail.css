@@ -188,10 +188,6 @@
     position: relative;
 }
 
-.product-price .item:hover{
-    border: 1px solid orange;
-}
-
 .product-price .item a{
     display: grid;
 }
@@ -1022,9 +1018,14 @@
         font-size: 14px;
 }
 
-.specs-modal a.close-specs-modal i{
-    top: 5px;
-    right: 5px;
+.confic-screen{
+    position: relative;
+}
+
+.specs-modal .close-specs-modal i{
+    position: absolute;
+    top: 20px;
+    right:400px;
     width: 30px;
     height: 30px;
     color: #fff;
@@ -1037,7 +1038,16 @@
     -moz-border-radius: 26px;
     -o-border-radius: 26px;
     -ms-border-radius: 26px;
-    font-size: 0;
+    font-size: 2.4rem;
+}
+
+.item.active{
+    border: #00483d solid 3px;
+}
+
+.item.active a i{   
+    border: none;
+    color: #00483d;
 }
 
 @media screen and (max-width: 576px){
