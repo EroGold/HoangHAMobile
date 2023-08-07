@@ -2,6 +2,8 @@
   width: 100%;
   margin: 0 auto;
   position: relative;
+  display: flex;
+  overflow: hidden;
 }
 .glider {
   margin: 0 auto;
@@ -136,6 +138,12 @@
 #imagePreview .glider-prev,
 #imagePreview .glider-next{
   font-size: 2rem;
+}
+
+
+.fancybox .glider-prev,
+.fancybox .glider-next{
+  background: none;
 }
 
 @media screen and (max-width: 576px) {

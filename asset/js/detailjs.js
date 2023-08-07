@@ -31,16 +31,29 @@ $('.view-more-container a').click(function(){
 // glider img   
 
 window.addEventListener('load', function(){
-    new Glider(document.querySelector('.glider'), {
+    new Glider(document.querySelector('.list-imgPreview .glider'), {
         slidesToScroll: 1,
         slidesToShow: 4,
+        draggable: true,
+        arrows: {
+          prev: '.list-imgPreview .glider-prev',
+          next: '.list-imgPreview .glider-next'
+        }
+      });
+      window.setInterval(function() {
+          $('.glider-next').click();
+          }, 7000);
+    });
+
+    new Glider(document.querySelector('.imagePreview .glider'), {
+        slidesToShow: 1,
+        dots: '#dots',
         draggable: true,
         arrows: {
           prev: '.glider-prev',
           next: '.glider-next'
         }
       });
-    });
 
 
     $('.item').click(function(){
@@ -56,30 +69,38 @@ window.addEventListener('load', function(){
         $(".specs-modal").hide();
     })
     
-$('.imagePreview').click(function(){
-    $(this).css({
-        "position": "fixed",
-        "background-color": "rgba(0 ,0 ,0 , 0.75",
-        "width": "100%",
-        "height": "100%",
-        "z-index": "99999",
-        "text-align": "center",
-        "top": "0",
-        "left": "0"
-    })
+    new Glider(document.querySelector('.fancybox .glider'), {
+        slidesToShow: 1,
+        dots: '#dots',
+        draggable: true,
+        arrows: {
+          prev: '.glider-prev a' ,
+          next: '.glider-next a'
+        }
+      });
+// open/close fancy
 
-    $('.product-image .product-img-slider img').css({
-        "width": "60rem"
-    })
+      $('.product-img-slider').click(function(){
+        $('.fancybox').show();
+      })
 
-    $('.list-imgPreview').css({
-        "display": "none"
-    })
-})
+      $('#fancyClose').click(function(){
+        $('.fancybox').hide();
+      })
 
-$('imagePreview img').focusout(function(){
-    $(this).css({
-        "width": "38rem",
-        "height": "37rem"
+// zoom
+
+      $('#imageZoom').click(function(){
+        $('fancy-image').toggleClass('.zoom')
+
     })
-})
+    
+    
+        $('#imagePlay').click(function(){
+            setInterval(function(){
+                $('#nextFancy').click();
+            }, 5000)
+        });
+    
+
+  

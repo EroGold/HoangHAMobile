@@ -87,12 +87,6 @@
     overflow-x: hidden;
 }
 
-.list-imgPreview .list-img div{
-    border: #eee 1px solid;
-    margin-right: 1rem;
-    border-radius: 5px;
-}
-
 .list-imgPreview .img-arrow{
     width: 2rem;
     height: 4.5rem;
@@ -1048,6 +1042,138 @@
 .item.active a i{   
     border: none;
     color: #00483d;
+}
+
+.imagePreview .main{
+    display: flex;
+    overflow: hidden;
+}
+
+.imagePreview .main .img-arrow{
+    background-color: #f4f4f4;
+    margin-top: 8rem;
+}
+
+.imagePreview .main .img-arrow i{
+    border-radius: 50%;
+    background: #0000002b;
+    padding: 2rem;
+}
+
+/* fancybox */
+.fancybox{
+    -webkit-backface-visibility: hidden;
+    height: 100%;
+    left: 0;
+    outline: none;
+    position: fixed;
+    display: none;
+    -webkit-tap-highlight-color: transparent;
+    top: 0;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    width: 100%;
+    z-index: 99992;
+}
+
+.fancy-container{
+    background-color: rgba(0,0,0,0.75);
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fancy-bar{
+    display: flex;
+}
+
+.fancybox-caption, .fancybox-infobar, .fancybox-navigation .fancybox-button, .fancybox-toolbar {
+    direction: ltr;
+    transition: opacity .25s ease,visibility 0s ease .25s;
+    z-index: 99997;
+}
+
+.fancy-content{
+    width: 123rem;
+}
+
+.fancy-navigation{
+    margin-top: 30rem;
+}
+
+.fancy-navigation a{
+    padding: 1rem 2rem;
+    color: #ccc;
+    font-size: 2rem;
+    background: #1f1f1f;
+}
+
+.fancybox-infobar {
+    width: 40%;
+    color: #ccc;
+    font-size: 13px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    height: 44px;
+    left: 0;
+    line-height: 44px;
+    min-width: 44px;
+    mix-blend-mode: difference;
+    padding: 0 10px;
+    pointer-events: none;
+    top: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.fancybox-toolbar{
+    margin-left: 112rem;
+    background-color: #343434;
+    width: 100%;
+}
+
+.fancybox-toolbar a{
+    color: #ccc;
+    line-height: 44px;
+    font-size: 13px;
+    padding: 0 10px;
+}
+
+.fancybox-button {
+    background: rgba(30,30,30,.6);
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    cursor: pointer;
+    display: inline-block;
+    height: 44px;
+    margin: 0;
+    padding: 10px;
+    position: relative;
+    transition: color .2s;
+    vertical-align: top;
+    visibility: inherit;
+    width: 44px;
+}
+
+.fancy-stage {
+    display: flex;
+    direction: ltr;
+    overflow: visible;
+    transform: translateZ(0);
+    z-index: 99994;
+}
+
+#imagePlay i.fa-stop{
+    display: none;
+}
+
+.zoom{
+    width: 50rem;
 }
 
 @media screen and (max-width: 576px){
