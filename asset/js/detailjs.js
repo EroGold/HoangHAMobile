@@ -1,3 +1,19 @@
+function nextFancy(){
+    $('#nextFancy').click()
+}
+
+function prevFancy(){
+    $('#prevFancy').click()
+}
+
+function autoFancy(){
+    setInterval(nextFancy, 1000)
+}
+
+function stopFancy(){
+    clearInterval(autoFancy)
+}
+
 // Show more
 $('.view-more-container a').click(function(){
 
@@ -69,15 +85,7 @@ window.addEventListener('load', function(){
         $(".specs-modal").hide();
     })
     
-    new Glider(document.querySelector('.fancybox .glider'), {
-        slidesToShow: 1,
-        dots: '#dots',
-        draggable: true,
-        arrows: {
-          prev: '.glider-prev a' ,
-          next: '.glider-next a'
-        }
-      });
+   
 // open/close fancy
 
       $('.product-img-slider').click(function(){
@@ -97,10 +105,62 @@ window.addEventListener('load', function(){
     
     
         $('#imagePlay').click(function(){
-            setInterval(function(){
-                $('#nextFancy').click();
-            }, 5000)
+            setInterval(function(nextFancy){}, 5000)
         });
-    
 
-  
+        $(document).ready(function() {
+            $('#prevFancy').on('click', function(){
+                $('#im_' + currentItem).stop().fadeOut(1);
+                decreaseItem();
+                $('#im_' + currentItem).stop().fadeIn(1);
+                });
+                
+            $('#nextFancy').on('click', function(){
+            $('#im_' + currentItem).stop().fadeOut(1);
+            increaseItem();
+            $('#im_' + currentItem).stop().fadeIn(1);
+            });
+            
+            var currentItem = 1;
+            var totalItem = 6;
+        
+            function increaseItem(){
+                ++currentItem;
+                if(currentItem > totalItem){
+                    currentItem = 1;
+                }
+            }
+        
+            function decreaseItem(){
+                --currentItem;
+                if(currentItem < 1){
+                    currentItem = totalItem;
+                }
+            }
+        
+            
+            });
+
+
+        
+
+            $('.playSlider').click(function(){
+                setInterval(nextFancy, 1000)
+                        $('.playSlider').css({
+                            "display": "none"
+                        })
+                        $('.stopPlay').css({
+                            "display": "block",
+                        })
+                    })
+     
+
+            $('.stopPlay').click(function(){
+                clearInterval(autoFancy);
+                $('.stopPlay').css({
+                            "display": "none"
+                        })
+                        $('.playSlider').css({
+                            "display": "block",
+                        })
+            })

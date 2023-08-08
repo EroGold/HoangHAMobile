@@ -1131,6 +1131,7 @@
 }
 
 .fancybox-toolbar{
+    display: flex;
     margin-left: 112rem;
     background-color: #343434;
     width: 100%;
@@ -1174,6 +1175,14 @@
 
 .zoom{
     width: 50rem;
+}
+
+.active{
+    display: block;
+}
+
+.disable{
+    display: none;
 }
 
 @media screen and (max-width: 576px){

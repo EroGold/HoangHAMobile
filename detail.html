@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./asset/js-cssframework/bootstrap-5.0.2-dist/css/bootstrap-grid.css">
     <script src="./asset/js-cssframework/glider.js"></script>
     <script src="./asset/js-cssframework/Jquery/jquery-3.7.0.min.js"></script>
+    <script src="./asset/js-cssframework/tasktimer.js"></script>
     <title>HoangHa Mobile</title>
     <link rel="icon" type="image/x-icon" href="./asset/img/20200315_a35eab0ce9a7ed1c4e1f4b5e8130b852_1584261775.jpg">
 </head>
@@ -3644,11 +3645,15 @@
                     <a id="imageZoom">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
-    
-                    <a id="imagePlay">
-                        <i class="fa-solid fa-play"></i>
-                        <i class="fa-solid fa-stop" style="display: none;"></i>
-                    </a>
+                    
+                    <a id="play"></a>
+                    <button class="playSlider">
+                        <i class="fa-solid fa-play playSlider"></i>
+                    </button>
+                    <button class="stopPlay" style="display: none;">
+                        <i class="fa-solid fa-stop stopPlay" style="display: none;"></i>
+
+                    </button>
     
                     <a id="fancyClose">
                         <i class="fa-solid fa-xmark"></i>
@@ -3657,44 +3662,44 @@
             </div>
            
             
-            <div class="fancy-stage glider-container">
-                <div class="fancy-navigation glider-prev">
+            <div class="fancy-stage">
+                <div class="fancy-navigation">
                 <a id="prevFancy">
                     <i class="fa-solid fa-arrow-left"></i>
                 </a>
                 </div> 
 
-                <div class="fancy-content glider">
+                <div class="fancy-content">
 
-                    <div class="fancy-slide fancy-slide-image" style="height: auto; width: 1191px;">
+                    <div class="fancy-slide fancy-slide-image" id="im_1">
                         <img src="./asset/img/Product-img/iPhone13/image-removebg-preview-10.webp" alt="" class="fancy-image">
                     </div>
     
-                    <div class="fancy-slide fancy-slide-image">
+                    <div class="fancy-slide fancy-slide-image" id="im_2">
                         <img src="./asset/img/Product-img/iPhone13/image-removebg-preview-12.webp" alt="" class="fancy-image">
                     </div>
     
     
-                    <div class="fancy-slide fancy-slide-image">
+                    <div class="fancy-slide fancy-slide-image" id="im_3">
                         <img src="./asset/img/Product-img/iPhone13/image-removebg-preview-14.webp" alt="" class="fancy-image">
                     </div>
     
-                    <div class="fancy-slide fancy-slide-image">
+                    <div class="fancy-slide fancy-slide-image" id="im_4">
                         <img src="./asset/img/Product-img/iPhone13/image-removebg-preview-10.webp" alt="" class="fancy-image">
                     </div>
     
-                    <div class="fancy-slide fancy-slide-image">
+                    <div class="fancy-slide fancy-slide-image" id="im_5">
                         <img src="./asset/img/Product-img/iPhone13/image-removebg-preview-12.webp" alt="" class="fancy-image">
                     </div>
     
     
-                    <div class="fancy-slide fancy-slide-image">
+                    <div class="fancy-slide fancy-slide-image" id="im_6">
                         <img src="./asset/img/Product-img/iPhone13/image-removebg-preview-14.webp" alt="" class="fancy-image">
                     </div>
                 </div>
 
 
-                <div class="fancy-navigation glider-next">
+                <div class="fancy-navigation">
                     <a id="nextFancy">
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
