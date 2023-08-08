@@ -54,7 +54,6 @@ p {
 }
 
 /* top nav */
-
 header .top-navigation {
     width: 100%;
     display: inline-flex;
@@ -1438,8 +1437,9 @@ footer .bg a.hotline, footer .bg a.hotline:link, footer .bg a.hotline:visited {
 }
 
 .bg .info{
+    margin-top: 3.5rem;
     text-align: center;
-    line-height: .5rem;
+    line-height: 1rem;
 }
 
 .heading .heading-warp{
