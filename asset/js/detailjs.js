@@ -6,13 +6,7 @@ function prevFancy(){
     $('#prevFancy').click()
 }
 
-function autoFancy(){
-    setInterval(nextFancy, 1000)
-}
 
-function stopFancy(){
-    clearInterval(autoFancy)
-}
 
 // Show more
 $('.view-more-container a').click(function(){
@@ -49,7 +43,7 @@ $('.view-more-container a').click(function(){
 window.addEventListener('load', function(){
     new Glider(document.querySelector('.list-imgPreview .glider'), {
         slidesToScroll: 1,
-        slidesToShow: 4,
+        slidesToShow: 4.5,
         draggable: true,
         arrows: {
           prev: '.list-imgPreview .glider-prev',
@@ -137,30 +131,44 @@ window.addEventListener('load', function(){
                     currentItem = totalItem;
                 }
             }
-        
+        });
+
+
+        $(document).ready(function() {
+
+            var carouselInterval;
+
+            function startAutoplay() {
+                carouselInterval = setInterval(function() {
+                    $('#nextFancy').click();
+                    }, 3000); 
+            }
             
-            });
-
-
+            function stopAutoplay(){
+                clearInterval(carouselInterval)
+            }
         
-
-            $('.playSlider').click(function(){
-                setInterval(nextFancy, 1000)
-                        $('.playSlider').css({
-                            "display": "none"
-                        })
-                        $('.stopPlay').css({
-                            "display": "block",
-                        })
-                    })
-     
-
-            $('.stopPlay').click(function(){
-                clearInterval(autoFancy);
-                $('.stopPlay').css({
-                            "display": "none"
-                        })
-                        $('.playSlider').css({
-                            "display": "block",
-                        })
+            $('#play').click(function(){
+                if($('#play i.playSlider').hasClass('active')){
+                    $('#play i.playSlider').removeClass('active');
+                    $('#play i.stopPlay').addClass('active');
+                    startAutoplay();
+                }else if($('#play i.stopPlay').hasClass('active')){
+                    $('#play i.playSlider').addClass('active');
+                    $('#play i.stopPlay').removeClass('active');
+                    stopAutoplay();
+                }
             })
+        })
+
+        $(document).ready(function(){
+            $('.love-this-button a').click(function(){
+                if($('.love-this-button a i.heart-1').hasClass('active')){
+                    $('.love-this-button a i.heart-1').removeClass('active');
+                    $('.love-this-button a i.heart-2').addClass('active');
+                }else{
+                    $('.love-this-button a i.heart-2').removeClass('active');
+                    $('.love-this-button a i.heart-1').addClass('active');
+                }
+            })
+        })

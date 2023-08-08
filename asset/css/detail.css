@@ -35,7 +35,7 @@
 
 .product-image .product-img-slider img{
     width: 37rem;
-    margin-top: -7rem;
+    margin-top: -5rem;
 }
 
 .product-info{
@@ -118,7 +118,6 @@
     width: 475px;
 }
 
-.product-image .love-this-button i.heart-2,
 .product-price .option .item i.tick-2{
     display: none;
 }
@@ -1177,11 +1176,8 @@
     width: 50rem;
 }
 
-.active{
-    display: block;
-}
-
-.disable{
+#play i:not(.active),
+.love-this-button a i:not(.active){
     display: none;
 }
 
