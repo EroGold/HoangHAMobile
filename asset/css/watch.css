@@ -1,0 +1,277 @@
+/* ads banner */
+.ads{
+    margin-top: 1rem;
+}
+
+.ads-banner a img{
+    border-radius: 8px;
+}
+/* company-tag */
+.company{
+    margin: 0;
+}
+
+.company-container{
+    display: flex;
+    width: 100%;
+}
+
+.company-tag ul{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 114rem;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+.company-tag ul::-webkit-scrollbar{
+    display: none;
+}
+
+.company-tag ul li{
+    padding: 0;
+    width: 133px;
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+.company-tag ul li label{
+    display: none;
+}
+
+.company-tag ul li img{
+    width: 90px;
+    max-height: 80px;
+    margin: -10px 24px;
+    border-radius: 4px;
+}
+
+.company-control{
+    margin-top: 2.5rem;
+}
+
+.company-control i{
+    margin-right: 1rem;
+    background-color: #e3e3e3;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+/* product-link  */
+
+/* filter product */
+.desktop{
+    display: flex;
+}
+
+.filter{
+    position: relative;
+    display: flex;
+    background: #fff 0% 0% no-repeat padding-box;
+    box-shadow: 0 3px 6px #00000029;
+    border-radius: 14px;
+    margin: 20px 0;
+}
+
+.left{
+    display: flex;
+   margin-left: 24rem;
+}
+
+.left strong.label{
+    display: inline-block;
+    color: #00917a;
+    padding: 15px 20px;
+}
+
+.filter .filter-option{
+    display: block;
+    padding: 15px 9px;
+    margin-right: 20px;
+}
+
+.right {
+    display: flex;
+    justify-items: right;
+    justify-content: right;
+    width: 100px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.desktop .filter .filter-option:hover label a{
+    color: #fd475a;
+}
+
+.filter .filter-option .sub{
+    display: none;
+    position: absolute;
+    box-shadow: 0 3px 6px #00000029;
+    border-radius: 14px;
+    top: 4.8rem;
+    width: 100%;
+    left: 0;
+    background: #fff;
+    z-index: 1;
+} 
+
+.filter .filter-option:hover .sub{
+    display: block;
+}
+
+.filter .filter-option .sub ul{
+    background: #fff; 
+    border-radius: 14px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 5px 10px;
+    grid-column-gap: 10px;
+}
+
+.filter .filter-option .sub ul li{
+    padding: 5px;
+    list-style: none;
+    width: 220px;
+}
+
+.filter .filter-option .sub ul li{
+    color: #00483d;
+}
+
+.sub ul li a{
+    cursor: pointer;
+    display: flex;
+}
+
+.sub ul li a i{
+    margin: .4rem .2rem 0 0;
+}
+/* more-product */
+.more-product {
+    text-align: center;
+}
+
+.more-product a {
+    text-transform: uppercase;
+    margin: 30px auto 20px auto;
+    padding: 6px 50px;
+    display: inline-block;
+    background: #fff 0% 0% no-repeat padding-box;
+    box-shadow: 0 4px 6px #00000029;
+    border: 1px solid #004b3f;
+    border-radius: 4px;
+    color: #004b3f;
+    font-weight: bold;
+}
+
+.page-content p span.head{
+    font-size: 18pt;
+}
+
+.page-content p span:not(.head){
+    font-size: 12pt;
+}
+
+.mobile-ver{
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    .company-tag ul li{
+        width: 430px;
+    }
+
+    .company-tag ul{
+        width: 120rem;    
+    }
+
+    .company-control i{
+        display: none;
+    }
+
+    .company-tag ul li img{
+        max-height: none;
+        width: 300px;
+        margin: -60px 60px;
+    }
+    .ads-banner{
+        display: none;
+    }
+
+    .left strong.label{
+        font-size: 6rem;
+        color: #000;
+    }
+
+    .filter{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .filter label{
+        padding: 5px 0;
+        color: #888;
+        font-weight: bold;
+    }
+
+    .left{
+        flex-direction: column;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    .right{
+        width: 100%;
+        justify-content: left;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .mobile-ver{
+        display: block;
+    }
+
+    .filter .filter-option a{
+        font-size: 5rem;
+    }
+
+    .filter .right .filter-option a{
+        margin-right: 37rem;
+    }
+
+    .filter .filter-option a select{
+        width: 60rem;
+        font-size: 5rem;
+        float: right;
+        border: 1px solid #009981;
+        color: #009981;
+        padding: 4px 8px;
+    }
+
+    .filter .filter-option a select option{
+        font-size: 1.4rem;
+    }
+
+    .filter .filter-option a i{
+        display: none;
+    }
+
+    .list-product h1{
+        font-size: 6rem;
+    }
+
+    .more-product a{
+        font-size: 5rem;
+    }
+
+    .page-content p span.head{
+        font-size: 60pt;
+    }
+    
+    .page-content p span:not(.head){
+        font-size: 40pt;
+    }
+}

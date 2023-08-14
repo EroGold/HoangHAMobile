@@ -1101,7 +1101,7 @@ section .box-home .header h4 a{
     background-color: rgba(255, 255, 255, 0.7);
     border: var(--primary-color) solid .2rem;
     border-radius: .5rem;
-    top: 10rem;
+    top: 5rem;
     margin-right: 1rem;
     text-align: left;
     z-index: 3;
@@ -1308,6 +1308,7 @@ section .warp .item .text span{
 }
 
 .note{
+    margin-bottom: 1rem;
     font-size: 14px;
     color: #191919;
     text-align: justify;
